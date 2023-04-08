@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">  <!-- normalize hace que el header no tenga los costados en blanco, lo saque de un foro de internet -->
+    <script src="script.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <header class="cabecera">                       <!-- Cabecera -->
+        <div class="redes">                         <!-- Redes sociales -->
+            <a href="https://wwww.facebook.com/franck.luna.90"><img class="imagenes" src="img/facebook.png"></a> 
+            <a href="https://www.instagram.com/franckselenator/"><img class="imagenes" src="img/instagram.png"></a>
+            <a href="https://www.twitter.com/franckselenator"><img class="imagenes" src="img/twitter.png"></a>
+        </div>
+
+        <div>
+            <img class="imagenFondo" src="img/R.jpg" width="100%">  <!-- Imagen de banner -->
+        </div>
+
+        <div class="buscador">  <!-- Buscador -->
+            <input type="text" placeholder="¿Dónde querés mudarte?"> <!-- placeholder hace que el texto entre comillas aparezca en la casilla input -->
+            <select>
+                <option>Tipo de Propiedad</option>
+            </select>
+            <select>
+                <option>Tipo de Operacion</option>
+            </select>
+        </div>
+
+    </header>
+
+    <main>                             
+        <div class="contenedor">                     <!-- Formularios -->
+            <form class="formulario" onsubmit="return validar()"> <!-- funcion onsubmit evento de formulario que nos permite ejecutar un submit en React -->
+                <h2>Contacto</h2>
+                <div class="campo">                         <!--los "id" son para ayudar al javascript a encontrar las variables-->
+                    <div>
+                        <label>Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                    </div>
+
+                    <div>
+                        <label>Email</label>
+                        <input type="Email" placeholder="Tu Email" required>
+                    </div>
+
+                    <div>
+                        <label>Telefono</label>
+                        <input type="tel" id="telefono" placeholder="Tu Telefono" required>
+                    </div>
+
+                    <div>
+                        <label>Asunto</label>
+                        <input type="text" id="asunto" placeholder="Asunto">
+                    </div>
+
+                    <div>
+                        <label>Mensaje</label>
+                        <textarea class="texto" id="mensaje"></textarea>
+                    </div>
+                    <div class="enviar">
+                        <input class="boton" type="submit" value="Enviar">
+                        <input class="boton" type="reset" value="Cancelar">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor">                     <!-- Formulario 2 -->
+            <form class="formulario" onsubmit="return validarDatos()">
+                    <h2>Registro de Propiedad</h2>
+                <div class="campo">
+                    <div>
+                        <label>Provincia</label>
+                        <select>
+                            <option>Jujuy</option>
+                            <option>Salta</option>
+                            <option>Tucuman</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Direccion</label>
+                        <input type="text" id="direccion">
+                    </div>
+
+                    <div>
+                        <label>Tipo de Propiedad</label>
+                        <select>
+                            <option>Casa</option>
+                            <option>Departamento</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Tipo de Operacion</label>
+                        <select>
+                            <option>Alquiler</option>
+                            <option>Departamento</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Superficie</label>
+                        <input type="number" id="superficie">
+                    </div>
+
+                    <div>
+                        <label>Cantidad de Dormitorios</label>
+                        <input type="number" id="cantidad">
+                    </div>
+
+                    <div>
+                        <label>Moneda</label>
+                        <select>
+                            <option>Pesos ars</option>
+                            <option>Dolar Americano</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Precio</label>
+                        <input type="number" id="precio">
+                    </div>
+
+                    <div class="enviar"> 
+                        <input class="boton" type="submit" value="Enviar"> <!-- submit -->
+                        <input class="boton" type="reset" value="Cancelar">
+                    </div>
+
+                </div>
+
+			</form>
+        </div>
+    </main>
+
+    <footer>
+        <p>UNJU - Facultad de Ingenieria - APU - Franco Luna</p>
+    </footer>
+</body>
+</html>

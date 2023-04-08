@@ -1,0 +1,79 @@
+/* cabecera con redes sociales y buscador*/
+header{
+    background-color: #4fc09a;
+    padding: 5%;
+}
+.cabecera{
+    display: grid;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.redes{
+    padding-left: 1%;
+}
+.imagenes{ /* imagenes de las redes sociales*/
+    height: 20px;
+    width: 20px;
+}
+
+.buscador{
+    text-align: center;
+    font-size: 30px;
+}
+    /*       */
+main{
+    padding: 10%;
+}
+/*Formulario  */
+
+.contenedor{
+    padding: 1% 25% 1% 25%; /*desde el primero hasta el ultimo: top 1, right 25, bottom 1,left 25 */
+}
+.formulario{
+    border-radius: 2%;
+    background-color: darkgrey;
+    padding: 5%;
+}
+/*Botones */
+.enviar .boton{
+    width: 120px;
+    padding: 3px;
+}
+.enviar{
+    padding: 2%;
+    text-align: center;
+}
+.boton{
+    background-color: black;
+    color: white;
+}
+.boton:hover{                   /* hover es un evento que al acercar el puntero del mouse se active */
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+/*Contenido dentreo del form*/
+
+h2{
+    text-align: center;
+}
+label{
+    display: block;
+}
+.titulo{
+    text-align: center;
+}
+.texto{
+    width: 420px;
+    height: 100px;
+}
+/*pie de pagina*/
+footer{
+    background-color: #4fc09a;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+}
